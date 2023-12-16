@@ -13,6 +13,7 @@
       font-family: 'Sono', sans-serif;
       background-color:rgb(3, 3, 26);
       color: indigo;
+      text-align: center;
     }
     .pricing-plan:hover{
       color: black;
@@ -21,15 +22,16 @@
     .pricing-container{
       display: flex;
       flex-direction: row;
-      gap: 1rem;
-      justify-content: space-around;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
     .pricing-plan{
       flex: 0 1 320px;
       min-width: 270px;
       border: 5px solid black;
       border-radius: 10px;
-      text-align: center;
       line-height: 300%;
       background-color: lightsteelblue;
     }
@@ -43,8 +45,10 @@
       font-size: 2rem;
     }
     .plan-features{
+      list-style: none;
       font-weight: 700;
       font-size: 1.2rem;
+      padding: 0;
     }
     button{
       border-radius: 2px;
@@ -58,28 +62,30 @@
       background-color: indigo;
       color: lightsteelblue;
     }
-    @media(min-width: 600px) and (max-width: 900px ){
+    @media(min-width:640px) and (max-width:900px){
       body{
         background-color: rgb(21, 21, 80);
       }
       .pricing-container{
         flex-flow: row wrap;
+        height: 100%;
       }
       .pricing-plan{
       flex: 1 1 0px;
       min-width: 300px;
     }
     }
-    @media(max-width: 600px) {
+    @media(max-width:640px) {
       body{
         background-color: rgb(37, 37, 80);
       }
       .pricing-container{
         flex-direction: column;
         align-items: center;
+        height: 100%;
       }
       .pricing-plan{
-      flex: 1 1 0px;
+      flex: 0 1 0px;
       min-width: 320px;
       border: 5px solid black;
       border-radius: 10px;
